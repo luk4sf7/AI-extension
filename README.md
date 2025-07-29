@@ -1,4 +1,9 @@
 How to install the extension:
-  1. Open chrome://extensions/
-  2. Enable developer mode
-  3. Then go to "Load unpacked" and open the extracted zip folder
+
+1. Open Chrome
+2. Go to: chrome://extensions/
+3. Enable Developer mode (top right)
+4. Click "Load unpacked"
+5. Select your extension folder
+
+Now your extension is active. You should see the icon in the Chrome toolbar.
