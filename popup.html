@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI:SSOCIATE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI:SSOCIATE</h1>
+    </header>
+
+    <form id="chat-form" autocomplete="off">
+      <label for="question" class="question-label">Deine Frage an die KI:</label>
+      <textarea id="question" placeholder="Stelle deine Frage..." rows="5" required></textarea>
+      <button id="ask-button" type="submit">
+        <span id="button-text">Antwort generieren</span>
+        <span id="spinner" class="spinner">⏳</span>
+      </button>
+    </form>
+
+    <div id="response-container">
+      <h2>Antwort</h2>
+      <div id="response">Noch keine Antwort.</div>
+    </div>
+
+    <div id="history-container">
+      <div class="history-header">
+        <h2>Verlauf</h2>
+        <button id="clear-history">Verlauf löschen</button>
+      </div>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
